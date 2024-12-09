@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTO MUSLIAJ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <style>
+        /* Basic styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black; /* Night mode */
+            color: white; /* White text */
+        }
+
+        header {
+            background-color: #32CD32; /* Darker gray for header */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            font-size: 1.8em;
+            color: white;
+        }
+
+        header img {
+            width: 120px;
+            margin-right: 20px;
+        }
+
+        .location-header {
+            text-align: center;
+            font-size: 1.8em;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        .map {
+            display: flex;
+            justify-content: center;
+            gap: 10px; /* Reduced gap between maps */
+            margin: 20px 0;
+        }
+
+        .map div {
+            text-align: center;
+            flex: 1;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 400px;
+            height: 300px;
+            border: 2px solid #32CD32; /* Bright green border for maps */
+        }
+
+        .contact {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 1.2em;
+        }
+
+        .contact h2, 
+        .contact p:first-of-type {
+            color: white; /* Make "Na Kontaktoni" and "Numrat e Telefonit:" white */
+        }
+
+        .contact a {
+            color: #32CD32; /* Bright green links for phone numbers */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 250px; /* Space between social icons */
+            margin: 20px 0;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            text-align: center;
+            width: 220px; /* Fixed width for all social links */
+        }
+
+        .social-links img {
+            width: 90px;
+            height: 90px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #000; /* Black footer */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        /* Mobile Responsiveness */
+        @media screen and (max-width: 768px) {
+            .map {
+                flex-direction: column; /* Stack maps vertically on small screens */
+            }
+
+            iframe {
+                max-width: 100%; /* Make iframe responsive */
+            }
+
+            header {
+                font-size: 1.5em;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact {
+                font-size: 1.1em;
+            }
+
+            footer {
+                padding: 15px;
+            }
+
+            .social-links img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="LOGO.jpg" alt="Logo Auto Musliaj"> <!-- Update the path if needed -->
+        <h1>AUTO MUSLIAJ</h1>
+    </header>
+
+    <!-- Location Header -->
+    <div class="location-header">VENDNDODHJA:</div>
+
+    <!-- Google Maps Section -->
+    <div class="map">
+        <div>
+            <h2>Pjese Kembimi, Rruga e Krujes, Fushe Kruje</h2>
+            <iframe src="https://maps.google.com/maps?q=Auto%20landi%20fushe%20kruje%20Location&output=embed" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div>
+            <h2>Servis & Pjese Kembimi, Hasan, Fushe Kruje</h2>
+            <iframe src="https://maps.google.com/maps?q=FPG4%2BC6J%20Hasan%20Fush%C3%AB%20Kruj%C3%AB%201502&output=embed" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <!-- Contact Information Section -->
+    <div class="contact">
+        <h2>Na Kontaktoni</h2>
+        <p>Numrat e Telefonit:</p>
+        <p>
+            <a href="tel:+355696802333">+355696802333</a><br>
+            <a href="tel:+355685799474">+355685799474</a><br>
+            <a href="tel:+355695225703">+355695225703</a>
+        </p>
+        <p>Email: <a href="mailto:autolandi.fkruje@gmail.com">autolandi.fkruje@gmail.com</a></p>
+    </div>
+
+    <!-- Social Media Links Section -->
+    <div class="social-links">
+        <a href="https://www.facebook.com/pjese.kembimi.auto.landi/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+            <div>Facebook</div>
+            <div>AUTO LANDI</div>
+        </a>
+        <a href="https://www.instagram.com/pjese_kembimi_auto_landi/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            <div>Instagram</div>
+            <div>@pjese_kembimi_auto_landi</div>
+        </a>
+        <a href="https://www.tiktok.com/@pjese_kembimi_auto_landi" target="_blank">
+            <img src="tiktok.png" alt="TikTok"> <!-- Update the path if needed -->
+            <div>TikTok</div>
+            <div>@pjese_kembimi_auto_landi</div>
+        </a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 AUTO MUSLIAJ - Të gjitha të drejtat e rezervuara</p>
+    </footer>
+
+</body>
+</html>
